@@ -24,19 +24,21 @@ The metrics reflecting these improvements are listed below.
 ![Harden network ](https://github.com/user-attachments/assets/27fc337a-4f7d-4209-9374-b19148401d87)
 
 
-The architecture of the mini honeynet in Azure consists of the following components:
+The Mini honeypot lab consist of these components below 
 
-- Virtual Network (VNet)
-- Network Security Group (NSG)
-- Virtual Machines (2 windows, 1 linux)
-- Log Analytics Workspace
-- Azure Key Vault
-- Azure Storage Account
-- Microsoft Sentinel
+<li>Microsoft Sentinel</li>
+<li>Azure Storage Account</li>
+<li>Azure Key Vault</li>
+<li>Log Analytics Workspace</li>
+<li>Virtual Machines (2 Windows, 1 Linux)</li>
+<li>Network Security Group (NSG)</li>
+<li>Virtual Network (VNet)</li>
 
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+<br>
+</br>In the initial configuration, as represented by the "Before" diagram and metrics, all resources within the honeynet environment were exposed to the internet. Both the virtual machines and network security group firewalls were configured with open access, leaving them fully accessible from external sources. This exposure extended to all other resources within the environment, illustrating a highly vulnerable state prior to the implementation of security controls <br>
+</br>
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+In the "After" diagram and metrics, I strengthened the environment by implementing controls aligned with NIST 800-53 standards. This hardening process involved blocking all malicious web traffic and securing the environment with robust firewall rules and strong password policies. These measures effectively enhanced the security posture of the environment, significantly reducing its exposure to potential threats.
 
 ## Attack Maps Before Hardening / Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
