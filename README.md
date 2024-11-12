@@ -1,1 +1,1 @@
-# -Blue-Cloud-Soc
+# Blue-Cloud-Soc
