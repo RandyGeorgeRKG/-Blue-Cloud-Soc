@@ -79,6 +79,10 @@ Stop Time	2024-11-10T15:16:38.7503742Z
 
 ## Conclusion
 
-In this project, a mini honeynet was constructed in Microsoft Azure and log sources were integrated into a Log Analytics workspace. Microsoft Sentinel was employed to trigger alerts and create incidents based on the ingested logs. Additionally, metrics were measured in the insecure environment before security controls were applied, and then again after implementing security measures. It is noteworthy that the number of security events and incidents were drastically reduced after the security controls were applied, demonstrating their effectiveness.
+In this project, I successfully built a mini honeynet environment using Microsoft Azure. I also integrated log sources into a Log Analytics workspace, enabling comprehensive data collection. Leveraging Microsoft Sentinel, I configured alerting mechanisms and automated incident generation for enhanced monitoring and response.
 
-It is worth noting that if the resources within the network were heavily utilized by regular users, it is likely that more security events and alerts may have been generated within the 24-hour period following the implementation of the security controls.
+Throughout the process, I followed the NIST SP 800-61 framework for incident handling, which encompasses the key phases of Preparation, Detection & Analysis, Containment, Eradication & Recovery, and Post-Incident Activity. This allowed me to establish a structured approach to incident management and ensure a robust response protocol.
+
+Additionally, I evaluated the security posture of an insecure environment by measuring key metrics before and after applying NIST SP 800-53 security controls. The results demonstrated a significant reduction in cyber incidents, confirming the effectiveness of these controls in securing the environment. It is important to note that, had the resources within the network been actively utilized by regular users, the volume of security events and alerts would likely have been higher during the 24-hour period immediately following the implementation of these controls.
+
+This exercise not only validated the effectiveness of NIST security frameworks but also reinforced the importance of proactive security measures in mitigating potential cyber threats.
