@@ -41,9 +41,9 @@ The Mini honeypot lab consist of these components below
 In the "After" diagram and metrics, I strengthened the environment by implementing controls aligned with NIST 800-53 standards. This hardening process involved blocking all malicious web traffic and securing the environment with robust firewall rules and strong password policies. These measures effectively enhanced the security posture of the environment, significantly reducing its exposure to potential threats.
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+![Linux Today](https://github.com/user-attachments/assets/2ec6a398-edb7-4b34-b363-b65e74c78d2f)<br>
+![NSG Today](https://github.com/user-attachments/assets/d243c14f-b5c1-4d4b-8726-e22cad706ac9)<br>
+![Windows Today](https://github.com/user-attachments/assets/3b615445-18b0-40f5-b693-f4747fdf3af2)<br>
 
 ## Metrics Before Hardening / Security Controls
 
