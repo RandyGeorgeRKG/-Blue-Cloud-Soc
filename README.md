@@ -17,10 +17,12 @@ The metrics reflecting these improvements are listed below.
 <li>Syslog (Linux Event Logs)</li>
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+![Public internet ](https://github.com/user-attachments/assets/0444a4a5-8b4b-43c3-9645-de4305d1215a)
+
 
 ## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+![Harden network ](https://github.com/user-attachments/assets/27fc337a-4f7d-4209-9374-b19148401d87)
+
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
