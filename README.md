@@ -5,13 +5,16 @@
 
 ## Introduction
 
-In this project, I build a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, apply some security controls to harden the environment, measure metrics for another 24 hours, then show the results below. The metrics we will show are:
+Howdy! Thanks for checking out my SOC Project. The purpose of this project is to demonstrate to IT and business professionals the critical importance of implementing robust cybersecurity controls and protocols to counteract today's evolving threat landscape.
+In this project, I created a honeynet within the Azure environment, where I ingested logs from multiple resources into Log Analytics. I then connected my Log Analytics workspace to Azure Sentinel to track incidents across the environment. This setup allowed me to generate attack maps and create incidents, offering real-time visibility into security events.
+Initially, I deployed the honeynet with minimal security controls, leaving the environment vulnerable for 24 hours to capture baseline security metrics. This approach enabled me to generate logs that underscore the importance of well-configured firewalls, strong password policies, and other security measures. Afterward, I applied security controls to harden the SOC environment, significantly reducing the attack surface.
+The metrics reflecting these improvements are listed below.
 
-- SecurityEvent (Windows Event Logs)
-- Syslog (Linux Event Logs)
-- SecurityAlert (Log Analytics Alerts Triggered)
-- SecurityIncident (Incidents created by Sentinel)
-- AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+<li>AzureNetworkAnalytics_CL (Malicious flows allowed into our honeynet)</li>
+<li>SecurityIncident (Incidents created by Sentinel)</li>
+<li>SecurityEvent (Windows Event Logs)</li>
+<li>SecurityAlert (Log Analytics alerts triggered)</li>
+<li>Syslog (Linux Event Logs)</li>
 
 ## Architecture Before Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
