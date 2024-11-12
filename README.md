@@ -48,31 +48,31 @@ In the "After" diagram and metrics, I strengthened the environment by implementi
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+Start Time 2024-11-08T02:44:22.9390484Z
+Stop Time 2024-11-09T02:45:00.9096192Z
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
+| SecurityEvent            | 45707
+| Syslog                   | 9635
 | SecurityAlert            | 10
-| SecurityIncident         | 348
+| SecurityIncident         | 5093
 | AzureNetworkAnalytics_CL | 843
 
 ## Attack Maps Before Hardening / Security Controls
 
-```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+```After Making the changes to my controls all my queries actually came back with 0.```
 
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2023-03-18 15:37
-Stop Time	2023-03-19 15:37
+Start Time 2024-11-09T15:16:38.7503742Z
+Stop Time	2024-11-10T15:16:38.7503742Z
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 8778
-| Syslog                   | 25
+| SecurityEvent            | 589
+| Syslog                   | 45
 | SecurityAlert            | 0
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
